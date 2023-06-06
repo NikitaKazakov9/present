@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: HypatiaSansProRegular;
+    src: url("../fonts/HypatiaSansPro-Regular.ttf");
+}
+@font-face {
+    font-family: HypatiaSansProBold;
+    src: url("../fonts/HypatiaSansPro-Bold.ttf");
+}
+
+body {
+    font-family: "Source Sans 3", Arial, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.container {
+    margin: 0 auto;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    margin-left: 30px;
+    vertical-align: bottom;
+}
+.menu {
+    margin-left: 100px;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+.menu-item {
+    margin-right: 50px;
+}
+.menu-item .maps_mark {
+    width: 16px;
+    height: 15px;
+    margin-right: 3px;
+}
+.menu-item a {
+    font-size: 20px;
+    color: #432E25;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+.menu-item a:hover {
+    color: #fd7e14;
+}
+
+
+.container_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70.75rem;
+}
+.container_main_banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.main_banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 71.25rem;
+    position: relative;
+    padding-top: 10rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.block_text {
+    width: 45%;
+    padding-left: 1rem;
+}
+.main_text {
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    font-family: HypatiaSansProBold, sans-serif;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.03em;
+    color: #432E25;
+}
+.second_main_text {
+    font-size: 1.375rem;
+    font-family: "Source Sans 3 Bold", sans-serif;
+    line-height: 1.5rem;
+    color: #432E25;
+    margin-bottom: 2.0625rem;
+    font-weight: bold;
+}
+.container_button_main {
+    display: flex;
+    gap: 10px;
+}
+.down_main_text {
+    max-width: 20.9375rem;
+    margin-top: 2.9375rem;
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: #432E25;
+}
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F6F6F6;
+    min-height: 3.125rem;
+    border: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-family: HypatiaSansProBold, sans-serif;
+    cursor: pointer;
+}
+.ingredients_container {
+    justify-content: center;
+}
+.braun {
+    width: 146px;
+    height: 50px;
+    color: #432E25;
+    transition: 0.5s;
+    border: 0.125rem solid #432E25;
+}
+.braun:hover {
+    background: #fd7e14;
+    border: 0.125rem solid #fd7e14;
+    color: #ffffff;
+}
+.ingredients {
+    width: 190px;
+    height: 50px;
+    background: none;
+    transition: 0.5s;
+    border: 0.125rem solid #ffffff;
+}
+.ingredients:hover {
+    background: #fd7e14;
+    border: 0.125rem solid #fd7e14;
+    color: #ffffff;
+}
+.see_maps {
+    width: 250px;
+    height: 50px;
+    background: none;
+    transition: 0.5s;
+    border: 0.125rem solid #432E25;
+    color: #432E25;
+    margin-top: 3rem;
+}
+.see_maps:hover {
+    background: #fd7e14;
+    border: 0.125rem solid #fd7e14;
+    color: #ffffff;
+}
+
+
+
+.container_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    padding: 3.5625rem 0 4.375rem;
+}
+.container_why {
+    display: flex;
+    justify-content: center;
+    width: 71.25rem;
+}
+.row_why {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 50%;
+    z-index: 1;
+    margin-top: 50px;
+}
+.text_row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: HypatiaSansProBold, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+}
+.text_row p {
+    color: #fd7e14;
+}
+.icon_check {
+    width: 22px;
+    height: 15px;
+    margin-top: -3px;
+}
+.container_image_why {
+    display: flex;
+}
+.image_why {
+    width: 41.4375rem;
+    height: 35.6875rem;
+    margin-left: -7.8125rem;
+    margin-top: -1.0625rem;
+}
+
+
+.text_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: HypatiaSansProBold, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #432E25;
+    margin-top: 40px;
+}
+.people {
+    font-size: 44px;
+}
+
+
+.feed {
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.container_feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background: #F8F8F8;
+    padding: 15px;
+    gap: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container_feed:hover {
+    color: #fd7e14;
+    transform: scale(1.1);
+}
+.image_feed {
+    width: 17.3125rem;
+    height: 12.5rem;
+}
+.text_feed {
+    font-family: HypatiaSansProBold, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.container_ingredients {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.banner_ingredients_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    padding-top: 21.3125rem;
+    position: relative;
+    z-index: 10;
+    color: #F6F6F6;
+    gap: 20px;
+}
+.text_main_ingredients {
+    font-family: HypatiaSansProBold, sans-serif;
+    text-align: center;
+    font-size: 34px;
+}
+.down {
+    font-family: HypatiaSansProRegular, sans-serif;
+    font-size: 22px;
+}
+
+
+.select_head_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 0 0;
+}
+.select_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 71.25rem;
+    gap: 40px;
+}
+.select_head_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+    font-family: HypatiaSansProBold, sans-serif;
+    text-transform: uppercase;
+    line-height: 2.0rem;
+    color: #432E25;
+}
+.select_head_text div {
+    font-size: 20px;
+    font-family: HypatiaSansProRegular, sans-serif;
+    text-transform: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #322620;
+    width: 100%;
+}
+.container_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 71.25rem;
+    gap: 50px;
+    padding: 5rem 0 3rem;
+}
+.contacts_container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #ffffff;
+    font-family: HypatiaSansProRegular, sans-serif;
+    font-size: 24px;
+}
+.contacts_text {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: 0.5s;
+}
+.contacts_text:hover {
+    color: #fd7e14;
+}
+.contacts_icon {
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+}
+.kazak_text {
+    color: #ffffff;
+    font-family: HypatiaSansProRegular, sans-serif;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .banner {
+        height: 60.75rem;
+    }
+    .banner_ingredients_content {
+        padding-top: 19rem;
+    }
+}
