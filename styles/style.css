@@ -15,6 +15,9 @@
 body {
     font-family: "Source Sans 3", Arial, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
 .header {
     position: fixed;
@@ -79,6 +82,11 @@ body {
     width: 100%;
     height: 35.125rem;
 }
+.banner_food {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+}
 .container_main_banner {
     position: absolute;
     width: 100%;
@@ -95,7 +103,7 @@ body {
 }
 .container_text {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     max-width: 71.25rem;
     position: relative;
     padding-top: 10rem;
@@ -105,8 +113,17 @@ body {
     margin-left: auto;
 }
 .block_text {
+    display: flex;
+    flex-direction: column;
     width: 45%;
     padding-left: 1rem;
+}
+.block_text_food {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 1rem;
+    margin-right: 2rem;
 }
 .main_text {
     text-transform: uppercase;
@@ -135,7 +152,21 @@ body {
     font-size: 18px;
     color: #432E25;
 }
-
+.down_main_text_food {
+    max-width: 45rem;
+    margin-top: 2.9375rem;
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: #432E25;
+}
+.block_image {
+    width: 350px;
+    height: 400px;
+}
+.block_image_corm {
+    width: 100%;
+    height: 100%;
+}
 
 
 .button {
@@ -425,11 +456,12 @@ body {
 }
 .corm_box:hover {
     color: #fd7e14;
-    transform: scale(1.1);
+    box-shadow: 4px 3px 8px 1px #fd7e14;
 }
 .corm_image {
     width: 350px;
     height: 400px;
+    object-fit: contain;
 }
 .corm_text_main {
     font-size: 1.625rem;
