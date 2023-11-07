@@ -32,3 +32,30 @@ document.addEventListener("DOMContentLoaded", function () {
         elem.style.backgroundPositionX = '0' + (0.2 * window.pageYOffset) + 'px';
     })
 });
+
+function openList(list, item_list) {
+    let div = document.getElementById(list).style.display;
+    let blockHidden = document.getElementById(list);
+    let item = document.getElementById(item_list).style;
+
+    if(div=="") {
+        div = "none";
+        item = "transform: rotate(0deg); top: -3px"
+    }
+
+    if (div == "none") {
+        div = "block";
+        item = "transform: rotate(180deg); top: 0px"
+    } else {
+        div = "none";
+        item = "transform: rotate(0deg); top: -3px"
+    }
+    document.getElementById(list).style.display = div;
+    document.getElementById(item_list).style = item;
+
+    blockHidden.classList.add('b-show');
+}
+
+function openMenu() {
+    document.getElementById("container_mobile").classList.toggle("show");
+}
