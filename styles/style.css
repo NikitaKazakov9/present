@@ -556,6 +556,10 @@ a {
     color: #fd7e14;
     box-shadow: 4px 3px 8px 1px #fd7e14;
 }
+.by_corm:hover {
+    color: #432E25;
+    box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.2);
+}
 .corm_image {
     width: 350px;
     height: 400px;
@@ -577,7 +581,30 @@ a {
     line-height: 1.5rem;
     margin-bottom: 0.75rem;
 }
-
+.container_by_corm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+.button_by_corm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #000000;
+    background: #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #000000;
+    font-size: 1.625rem;
+    font-family: HypatiaSansProBold, sans-serif;
+}
+.button_by_corm:hover {
+    color: #fd7e14;
+    border: 2px solid #fd7e14;
+}
 
 @media only screen and (max-width: 1600px) {
     .banner {
